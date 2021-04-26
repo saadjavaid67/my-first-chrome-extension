@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "Saad's Social Extension",
+    "description": "This Extension contain links to my social profiles",
+    "version": "1.0.0",
+    "icons": { "128": "icons/icon.png" },
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_popup": "index.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "activeTab"
+    ]
+}
